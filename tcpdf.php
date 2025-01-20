@@ -120,6 +120,9 @@ require_once(dirname(__FILE__).'/include/tcpdf_images.php');
 // TCPDF static methods and data
 require_once(dirname(__FILE__).'/include/tcpdf_static.php');
 
+$fontFile = 'fonts/Anton-Regular.ttf'; // Adjust the path
+$fontName = TCPDF_FONTS::addTTFfont($fontFile, 'TrueTypeUnicode', '', 32);
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 /**
